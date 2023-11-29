@@ -11,7 +11,7 @@ CORS(app)
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'secret'
 app.config['MYSQL_DB'] = 'student'
-app.config['MYSQL_HOST'] = '34.32.40.93'
+app.config['MYSQL_HOST'] = '10.154.0.2'
 mysql.init_app(app)
 
 def execute_query(query):
@@ -98,9 +98,9 @@ def index():
     return render_template('index.html')
 
 
-if __name__ == "__main__":
+if _name_ == "__main__":
     app.run(host='0.0.0.0', port='8080')
 
 
-if __name__ == "__main__":
+if _name_ == "__main__":
     app.run(host='0.0.0.0', port='8080')
